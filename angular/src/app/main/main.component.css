@@ -1,0 +1,154 @@
+.show-button-items {
+    display: inline-block;
+    font-size: 22px;
+    text-align: center;
+    outline: none;
+    color: #fff;
+    background-color: #660c0c;
+    border: dashed;
+    border-radius: 12px;
+    box-shadow: 0 5px #b3b3b3;
+    position: relative;
+    top: 75px;
+    margin: 98px -5px 0px 13px;
+    float: left;
+    right: 11px;
+    height: 86px;
+    width: 168px;
+}
+
+.show-button-items:hover {
+    background-color: #07255f;
+}
+
+.show-button-items:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #b3b3b3;
+    transform: translateY(4px);
+}
+
+@-webkit-keyframes myfirst {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    100% {
+        left: 200px;
+        top: 0px;
+    }
+}
+
+.show-button-items:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #4CAE29;
+    transform: translateY(4px);
+}
+
+.container-class1 {
+    position: fixed;
+    width: 388px;
+    height: 624px;
+    border: 5px solid goldenrod;
+    top: 50px;
+    background-color: #d6ebd0;
+    z-index: -1;
+    margin: 1px 4px 1px -403px;
+}
+
+.container-class {
+    position: fixed;
+    width: 890px;
+    height: 624px;
+    border: 5px solid goldenrod;
+    top: 50px;
+    background-color: #d6ebd0;
+    z-index: -1;
+    margin: 1px 65px 77px 438px;
+    float: left;
+    right: -63px;
+}
+
+.show-button-pay {
+    position: fixed;
+    top: 600px;
+    height: 50px;
+    float: left;
+    left: 300px
+}
+
+.container-items {
+    position: fixed;
+    top: 130px;
+    height: 50px;
+    float: left;
+    left: 100px;
+    width: 300px;
+    margin: 10px 100px 10px 10px;
+}
+
+.container-amount {
+    position: fixed;
+    top: 610px;
+    height: 50px;
+    float: left;
+    left: 60px
+}
+
+.cart {
+    position: fixed;
+    left: 150px;
+    width: 60px;
+}
+
+.show-button-main {
+    display: inline-block;
+    font-size: 38px;
+    text-align: center;
+    outline: none;
+    color: #fff;
+    background-color: #660c0c;
+    border: dashed;
+    border-radius: 12px;
+    box-shadow: 0 5px #b3b3b3;
+    position: relative;
+    top: 20px;
+    margin: 6px -5px 0px 13px;
+    float: right;
+    right: 13px;
+    height: 100px;
+    width: 212px;
+}
+
+.show-button-main:hover {
+    background-color: #07255f;
+}
+
+.show-button-main:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #b3b3b3;
+    transform: translateY(4px);
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th,
+td {
+    padding: 15px;
+}
+
+div.scroll {
+    width: 336px;
+    height: 420px;
+    overflow: auto;
+    margin: 0px 0px 0px -52px;
+}

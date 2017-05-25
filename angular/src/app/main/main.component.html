@@ -1,0 +1,76 @@
+<div *ngIf="display">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <a class="navbar-brand"><b>Hello {{userName}}</b></a>
+    </nav>
+
+    <body class="container-class">
+        <div *ngFor="let item of courses">
+            <button (click)="selectCategory(item)" class="show-button-main">{{item.name}}</button>
+        </div>
+
+
+        <img class="resposive" src="../assets/img/special.jpeg" class="img-circle" style=" top: 197px;   height: 117px;
+    width: 271px; margin: -3px 0px 21px 7px;
+    position: fixed;" alt="sale img">
+
+        <img class="resposive" src="../assets/img/veg-thali.jpeg" class="img-circle" style=" top: 197px;   height: 117px;
+    width: 271px; margin: -3px 0px 21px 302px;
+    position: fixed;" alt="sale img">
+
+
+        <div *ngFor="let item of itemList">
+            <button class="show-button-items" (click)="selectItem(item)">{{item.name}}</button>
+        </div>
+
+
+        <img class="resposive" src="../assets/img/sale.jpeg" class="img-circle" style=" top: 197px;   height: 117px;
+    width: 271px; margin: -4px 2px 45px 599px;
+    position: fixed;" alt="special-price img">
+
+
+        <div class="container-class1">
+            <div class="container-items">
+                <div class="scroll">
+                    <!--<div class="row">-->
+                    <table>
+                        <tr>
+                            <th>Item</th>
+                            <th>Price </th>
+                            <th>Quantity</th>
+                        </tr>
+
+                        <tr *ngFor="let item of buyList">
+                            <td>{{item.name}}</td>
+                            <td>Rs. {{item.price}}</td>
+                            <td>{{item.quantity}}</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+
+
+
+            <div class="container" class="container-amount">
+                <b> Total Amount: {{totalPrice}} </b>
+            </div>
+
+
+            <div class="container">
+                <h1 class="cart">Cart</h1>
+
+                <div class="row">
+                    <div class="show-button-pay">
+                        <button type="button" (click)="billPay()" class="btn btn-success">Pay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</div>
+
+
+<div class="container" *ngIf="billdisplay">
+    <app-bill [buyersList]="buyList" [totalPrice]="totalPrice"></app-bill>
+</div>
